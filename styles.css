@@ -1,0 +1,197 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  text-align: center;
+  height: 100vh;
+}
+
+/* IMAGES */
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+/* =======================
+   MAIN LAYOUT (GRID)
+======================= */
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30% 10% auto;
+}
+
+/* TOP SECTION */
+.top {
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+
+/* HORIZONTAL MENU */
+.horizontal {
+  background-color: #0a3d62;
+}
+
+/* MAIN CONTENT */
+.main {
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+
+/* =======================
+   HEADER / NAV
+======================= */
+
+.top-header {
+  width: 100%;
+  height: 100%;
+  background-color: #0a3d62;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* BODY LINKS (OLD hor-body) */
+#hor-body,
+.sub-link {
+  color: #eb0d0d;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+#hor-body:hover,
+.sub-link:hover {
+  color: #838383;
+}
+
+/* =======================
+   TEXT CONTENT
+======================= */
+
+h1 {
+  color: #0a3d62;
+  margin-top: 20px;
+}
+
+p {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================
+   TEAM LINKS
+======================= */
+
+#team-links {
+  list-style: none;
+  padding: 20px;
+}
+
+#team-links li {
+  margin: 12px 0;
+}
+
+#team-links a {
+  text-decoration: none;
+  color: #0a3d62;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#team-links a:hover {
+  color: #eb0d0d;
+}
+
+/* =======================
+   GIF HEADER
+======================= */
+
+.gif-header {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 150px;
+  margin: auto;
+}
+
+.header-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* =======================
+   IFRAME (TEMP SUPPORT)
+======================= */
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
